@@ -26,8 +26,8 @@ with open(os.path.dirname(os.path.realpath(__file__)) + '/' + args.input, encodi
         outputData.writerow(['Datum', 'Beschreibung', 'Betrag'])
         row_cnt = 0
         for row in inputData:
-            if (row_cnt > 6): #The first 6 lines do not contain transfer details.
-                outputData.writerow([row[1], row[2] + ' ' + row[3] + ' ' + row[4], row[7]])
+            if (row_cnt > 4): #The first 4 lines do not contain transfer details.
+                outputData.writerow([row[1], row[4] + ' ' + row[5], row[8]])
             row_cnt += 1
 
 print ('FINISHED')
