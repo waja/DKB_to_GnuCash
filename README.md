@@ -17,3 +17,9 @@ Python 3.7
 ## Aufruf
 
 *python3 BankingImport.py 123456789.csv*
+
+## Umwandlung binary nach string Format
+
+z.B.:
+
+`iconv -f UTF-16LE -t UTF-8 123456789.csv > 987654321.csv`
